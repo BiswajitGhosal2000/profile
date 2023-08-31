@@ -65,7 +65,7 @@ a:focus {
 
 .wrapper .sidebar-header,
 .wrapper .sidebar-footer {
-    display:none;
+    display:block; /* Changed */
 }
 
 .navbar {
@@ -272,47 +272,6 @@ a:focus {
 }
 
 
-/**********************************/
-/******** Back to Top CSS *********/
-/**********************************/
-.back-to-top {
-    position: fixed;
-    display: none;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    line-height: 1;
-    font-size: 30px;
-    right: 30px;
-    bottom: 30px;
-    transition: background 0.5s;
-    behavior: 'smooth';
-    z-index: 11;
-}
-
-.back-to-top i {
-    color: #222222;
-}
-
-.back-to-top i:hover {
-    color: rgb(92, 174, 245);
-}
-
-.back-to-top {
-    -webkit-animation: action 1s infinite  alternate;
-    animation: action 1s infinite  alternate;
-}
-
-@-webkit-keyframes action {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-15px); }
-}
-
-@keyframes action {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-15px); }
-}
-
 
 /**********************************/
 /*********** Header CSS ***********/
@@ -325,8 +284,6 @@ a:focus {
 marquee{
     font-size: 20px;
 }
-
-
 
 .header p {
     color: rgb(92, 174, 245);
@@ -487,6 +444,103 @@ marquee{
 }
 
 
+
+
+
+/**********************************/
+/********* Training CSS *********/
+/**********************************/
+.training {
+    color: #000000;
+    position: relative;
+    padding: 60px 30px;
+    background: rgb(255, 255, 255,0.5);
+    border-bottom: 30px solid rgb(255, 255, 255);
+}
+
+.training .pro-col {
+    position: relative;
+    width: 100%;
+    padding: 20px 0 20px 20px;
+    border-left: 1px solid rgb(92, 112, 245);
+    border-bottom: 1px solid rgb(92, 112, 245);
+}
+
+.training .col-md-6:first-child .pro-col {
+    padding-top: 0;
+}
+
+.training .col-md-6:last-child .pro-col {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .training .col-md-6:nth-child(-n+2) .pro-col {
+        padding-top: 0;
+    }
+
+    .training .col-md-6:last-child .pro-col,
+    .training .col-md-6:nth-last-child(2) .pro-col {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+}
+
+
+
+.training .pro-col ::after {
+    position: absolute;
+    content: "";
+    width: 11px;
+    height: 11px;
+    background: #FF6F61;
+    top: 5px;
+    left: -26px;
+    border-radius: 5px;
+}
+
+
+
+.training .pro-col h3 {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.training .pro-col li {
+    margin: 0;
+}
+
+
+/**********************************/
+/*********** certification CSS **********/
+/**********************************/
+/**********************************/
+.certification {
+    color: #000000;
+    position: relative;
+    padding: 60px 30px 30px 30px;
+    background: rgb(255, 255, 255,0.5);
+    border-bottom: 30px solid rgb(255, 255, 255);
+    
+}
+.certification .ach-col {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+
+}
+.certification .ach-col h3 {
+
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+
 /**********************************/
 /********* Education CSS **********/
 /**********************************/
@@ -558,98 +612,6 @@ marquee{
 
 .education .edu-col p {
     margin: 0;
-}
-
-
-/**********************************/
-/********* Training CSS *********/
-/**********************************/
-.training {
-    color: #000000;
-    position: relative;
-    padding: 60px 30px;
-    background: rgb(255, 255, 255,0.5);
-    border-bottom: 30px solid rgb(255, 255, 255);
-}
-
-.training .pro-col {
-    position: relative;
-    width: 100%;
-    padding: 20px 0 20px 20px;
-    border-left: 1px solid rgb(92, 112, 245);
-    border-bottom: 1px solid rgb(92, 112, 245);
-}
-
-.training .col-md-6:first-child .pro-col {
-    padding-top: 0;
-}
-
-.training .col-md-6:last-child .pro-col {
-    border-bottom: none;
-    padding-bottom: 0;
-}
-
-@media (min-width: 768px) {
-    .training .col-md-6:nth-child(-n+2) .pro-col {
-        padding-top: 0;
-    }
-
-    .training .col-md-6:last-child .pro-col,
-    .training .col-md-6:nth-last-child(2) .pro-col {
-        border-bottom: none;
-        padding-bottom: 0;
-    }
-}
-
-
-
-.training .pro-col ::after {
-    position: absolute;
-    content: "";
-    width: 11px;
-    height: 11px;
-    background: #FF6F61;
-    top: 5px;
-    left: -26px;
-    border-radius: 5px;
-}
-
-
-
-.training .pro-col h3 {
-    font-size: 20px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    margin-bottom: 5px;
-}
-
-.training .pro-col li {
-    margin: 0;
-}
-/**********************************/
-/*********** achievements CSS **********/
-/**********************************/
-/**********************************/
-.achievements {
-    color: #000000;
-    position: relative;
-    padding: 60px 30px 30px 30px;
-    background: rgb(255, 255, 255,0.5);
-    border-bottom: 30px solid rgb(255, 255, 255);
-    
-}
-.achievements .ach-col {
-    position: relative;
-    width: 100%;
-    margin-bottom: 30px;
-
-}
-.achievements .ach-col h3 {
-
-    font-size: 20px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    margin-bottom: 5px;
 }
 
 
@@ -744,3 +706,46 @@ marquee{
     color: rgb(92, 112, 245);
     background: #222222;
 }
+
+
+/**********************************/
+/******** Back to Top CSS *********/
+/**********************************/
+.back-to-top {
+    position: fixed;
+    display: none;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 1;
+    font-size: 30px;
+    right: 30px;
+    bottom: 30px;
+    transition: background 0.5s;
+    behavior: 'smooth';
+    z-index: 11;
+}
+
+.back-to-top i {
+    color: #222222;
+}
+
+.back-to-top i:hover {
+    color: rgb(92, 174, 245);
+}
+
+.back-to-top {
+    -webkit-animation: action 1s infinite  alternate;
+    animation: action 1s infinite  alternate;
+}
+
+@-webkit-keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-15px); }
+}
+
+@keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-15px); }
+}
+
