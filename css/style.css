@@ -144,8 +144,8 @@ a:focus {
         margin-left: -250px;
         float: left;
         overflow: auto;
-        /* scrollbar-width: thin;
-        scrollbar-color: rgb(248, 248, 248); */
+        scrollbar-width: thin;
+        scrollbar-color: rgb(248, 248, 248);
         z-index: 2;
     }
 
@@ -444,7 +444,79 @@ marquee{
 }
 
 
+/**********************************/
+/********* Experiencr CSS **********/
+/**********************************/
+.experience {
+    color: #000000;
+    position: relative;
+    padding: 60px 30px;
+    background: rgb(255, 255, 255,0.5);
+    border-bottom: 30px solid rgb(255, 255, 255);
+}
 
+.experience .exp-col {
+    position: relative;
+    width: 100%;
+    padding: 20px 0 20px 20px;
+    border-left: 1px solid rgb(92, 112, 245);
+    border-bottom: 1px solid rgb(92, 112, 245);
+}
+
+.experience .col-md-6:first-child .exp-col {
+    padding-top: 0;
+}
+
+.experience .col-md-6:last-child .exp-col {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .experience .col-md-6:nth-child(-n+2) .exp-col {
+        padding-top: 0;
+    }
+
+    .experience .col-md-6:last-child .exp-col,
+    .experience .col-md-6:nth-last-child(2) .exp-col {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+}
+
+.experience .exp-col img {
+    position: relative;
+    display: block;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+
+.experience .exp-col span::before {
+    position: absolute;
+    content: "";
+    width: 11px;
+    height: 11px;
+    background: rgb(92, 112, 245);
+    top: 5px;
+    left: -26px;
+    border-radius: 5px;
+}
+
+.experience .exp-col span i {
+    color: rgb(92, 15, 15);
+}
+
+.experience .exp-col h3 {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.experience .exp-col p {
+    margin: 0;
+}
 
 
 /**********************************/
