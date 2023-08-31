@@ -167,12 +167,12 @@ a:focus {
     }
 
     .wrapper .sidebar .sidebar-header img {
-        width: 75%;
+        width: 50%;
         height: auto;
     }
     
     .navbar-brand {
-        display: none;
+        display: block;
     }
     
     .navbar {
@@ -196,10 +196,6 @@ a:focus {
         background-color: darkgrey;
         outline: 1px solid #708090;
         border-radius: 7px
-    }
-    
-    .navbar-brand {
-        display: none;
     }
     
     .sidebar .sidebar-footer {
@@ -364,7 +360,7 @@ marquee{
 
 .large-btn .content-inner {
     font-size: 0;
-    border-bottom: 30px solid rgb(255, 255, 255,0.5);
+    border-bottom: 30px solid rgb(255, 255, 255);
 }
 
 .large-btn .btn {
@@ -438,7 +434,7 @@ marquee{
 .about {
     color: #000000;
     position: relative;
-    padding: 60px 30px;
+    padding: 20px 20px;
     background: rgb(255, 255, 255,0.5);
     border-bottom: 30px solid rgb(255, 255, 255);
 }
