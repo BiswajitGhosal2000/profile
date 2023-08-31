@@ -484,7 +484,7 @@ marquee{
     }
 }
 
-.experience .exp-col img {
+.experience .exp-col span {
     position: relative;
     display: block;
     font-size: 20px;
