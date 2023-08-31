@@ -284,11 +284,12 @@ a:focus {
 /**********************************/
 .header {
     position: relative;
-    background: #ffffff;
+    background: linear-gradient(112deg, rgba(138,133,219,0) 0%, rgba(222,216,128,1) 53%, rgba(109,170,182,1) 100%);
 }
 
 marquee{
     font-size: 20px;
+    color: #d21212;
 }
 
 .header p {
@@ -459,6 +460,10 @@ marquee{
     padding: 60px 30px;
     background: rgb(255, 255, 255,0.5);
     border-bottom: 30px solid rgb(255, 255, 255);
+    /* for Scroll Bar */
+    width:100%;
+    overflow-y: scroll;
+    height: 100vh;
 }
 
 .experience .exp-col {
@@ -526,9 +531,9 @@ marquee{
 
 
 /**********************************/
-/*********** activitu CSS **********/
+/*********** skills CSS **********/
 /**********************************/
-.activity {
+.skills {
     color: #000000;
     position: relative;
     padding: 60px 30px 30px 30px;
@@ -536,14 +541,14 @@ marquee{
     border-bottom: 30px solid rgb(255, 255, 255);
 }
 
-.activity .act-col {
+.skills .act-col {
     position: relative;
     width: 100%;
     margin-bottom: 30px;
 }
 
 
-.activity .act-col h3 {
+.skills .act-col h3 {
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 2px;
@@ -553,17 +558,21 @@ marquee{
 
 
 /**********************************/
-/********* Training CSS *********/
+/********* projects CSS *********/
 /**********************************/
-.training {
+.projects {
     color: #000000;
     position: relative;
-    padding: 60px 30px;
+    padding: 30px 30px;
     background: rgb(255, 255, 255,0.5);
     border-bottom: 30px solid rgb(255, 255, 255);
+    /* for Scroll Bar */
+    width:100%;
+    overflow-y: scroll;
+    height: 100vh;
 }
 
-.training .pro-col {
+.projects .pro-col {
     position: relative;
     width: 100%;
     padding: 20px 0 20px 20px;
@@ -571,30 +580,35 @@ marquee{
     border-bottom: 1px solid rgb(92, 112, 245);
 }
 
-.training .col-md-6:first-child .pro-col {
+.projects .col-md-6:first-child .pro-col {
     padding-top: 0;
 }
 
-.training .col-md-6:last-child .pro-col {
+.projects .col-md-6:last-child .pro-col {
     border-bottom: none;
     padding-bottom: 0;
 }
 
 @media (min-width: 768px) {
-    .training .col-md-6:nth-child(-n+2) .pro-col {
+    .projects .col-md-6:nth-child(-n+2) .pro-col {
         padding-top: 0;
     }
 
-    .training .col-md-6:last-child .pro-col,
-    .training .col-md-6:nth-last-child(2) .pro-col {
+    .projects .col-md-6:last-child .pro-col,
+    .projects .col-md-6:nth-last-child(2) .pro-col {
         border-bottom: none;
         padding-bottom: 0;
+    }
+    .projects {
+        width:100%;
+        overflow-y: scroll;
+        height: 100vh;
     }
 }
 
 
 
-.training .pro-col ::after {
+.projects .pro-col ::after {
     position: absolute;
     content: "";
     width: 11px;
@@ -607,42 +621,15 @@ marquee{
 
 
 
-.training .pro-col h3 {
+.projects .pro-col h3 {
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 2px;
     margin-bottom: 5px;
 }
 
-.training .pro-col li {
+.projects .pro-col li {
     margin: 0;
-}
-
-
-/**********************************/
-/*********** certification CSS **********/
-/**********************************/
-/**********************************/
-.certification {
-    color: #000000;
-    position: relative;
-    padding: 60px 30px 30px 30px;
-    background: rgb(255, 255, 255,0.5);
-    border-bottom: 30px solid rgb(255, 255, 255);
-    
-}
-.certification .ach-col {
-    position: relative;
-    width: 100%;
-    margin-bottom: 30px;
-
-}
-.certification .ach-col h3 {
-
-    font-size: 20px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    margin-bottom: 5px;
 }
 
 
@@ -652,7 +639,7 @@ marquee{
 .education {
     color: #000000;
     position: relative;
-    padding: 60px 30px;
+    padding: 30px 30px;
     background: rgb(255, 255, 255,0.5);
     border-bottom: 30px solid rgb(255, 255, 255);
 }
@@ -720,6 +707,36 @@ marquee{
 }
 
 
+/**********************************/
+/*********** certification CSS **********/
+/**********************************/
+/**********************************/
+.certification {
+    color: #000000;
+    position: relative;
+    padding: 30px 30px 30px 30px;
+    background: rgb(255, 255, 255,0.5);
+    border-bottom: 30px solid rgb(255, 255, 255);
+    /* for Scroll Bar */
+    width:100%;
+    overflow-y: scroll;
+    height: 100vh;
+    
+}
+.certification .ach-col {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+
+}
+.certification .ach-col h3 {
+
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
 
 
 /**********************************/
@@ -728,7 +745,7 @@ marquee{
 .contact {
     color: #080808;
     position: relative;
-    padding: 60px 30px 30px 30px;
+    padding: 30px 30px 30px 30px;
     background: rgb(255, 255, 255,0.5);
 }
 
