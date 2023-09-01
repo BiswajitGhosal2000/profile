@@ -416,7 +416,6 @@ marquee{
 }
 
 
-
 .about .skills {
     padding-top: 15px;
 }
@@ -463,7 +462,7 @@ marquee{
     /* for Scroll Bar */
     width:100%;
     overflow-y: scroll;
-    height: 100vh;
+    height: 35rem;
 }
 
 .experience .exp-col {
@@ -531,9 +530,9 @@ marquee{
 
 
 /**********************************/
-/*********** skills CSS **********/
+/*********** Activity CSS **********/
 /**********************************/
-.skills {
+.activity {
     color: #000000;
     position: relative;
     padding: 60px 30px 30px 30px;
@@ -541,14 +540,14 @@ marquee{
     border-bottom: 30px solid rgb(255, 255, 255);
 }
 
-.skills .act-col {
+.activity .act-col {
     position: relative;
     width: 100%;
     margin-bottom: 30px;
 }
 
 
-.skills .act-col h3 {
+.activity .act-col h3 {
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 2px;
