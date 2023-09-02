@@ -565,10 +565,10 @@ marquee{
     padding: 30px 30px;
     background: rgb(255, 255, 255,0.5);
     border-bottom: 30px solid rgb(255, 255, 255);
-    /* for Scroll Bar */
-    width:100%;
-    overflow-y: scroll;
-    height: 100vh;
+     /* for Scroll Bar */
+     width:100%;
+     overflow-y: scroll;
+     height: 35rem;
 }
 
 .projects .pro-col {
@@ -719,7 +719,7 @@ marquee{
     /* for Scroll Bar */
     width:100%;
     overflow-y: scroll;
-    height: 100vh;
+    height: 35rem;
     
 }
 .certification .ach-col {
