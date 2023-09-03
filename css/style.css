@@ -3,7 +3,8 @@
 /**********************************/
 body {
     color: #666666;
-    background-image: url('bg2.png');
+    background-color: #0ee6ac;
+    /* background-image: url('bg2.png'); */
     /* background-repeat: no-repeat; */
     /* background-attachment: fixed; */
     background-size: fill;
