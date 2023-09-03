@@ -601,7 +601,7 @@ marquee{
     .projects {
         width:100%;
         overflow-y: scroll;
-        height: 100vh;
+        height: 35rem;
     }
 }
 
