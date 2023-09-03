@@ -3,7 +3,7 @@
 /**********************************/
 body {
     color: #666666;
-    background-color: #0ee6ac;
+    background-color: #2e4ac768;
     /* background-image: url('bg2.png'); */
     /* background-repeat: no-repeat; */
     /* background-attachment: fixed; */
@@ -686,8 +686,8 @@ marquee{
     position: relative;
     width: 100%;
     padding: 20px 0 20px 20px;
-    border-left: 1px solid rgb(92, 112, 245);
-    border-bottom: 1px solid rgb(92, 112, 245);
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
 }
 
 .education .col-md-6:first-child .edu-col {
@@ -724,15 +724,13 @@ marquee{
     content: "";
     width: 11px;
     height: 11px;
-    background: rgb(92, 112, 245);
+    background: white;
+    /* background: rgb(92, 112, 245); */
     top: 5px;
     left: -26px;
     border-radius: 5px;
 }
 
-.education .edu-col span i {
-    color: rgb(92, 112, 245);
-}
 
 .education .edu-col h3 {
     font-size: 20px;
@@ -799,10 +797,6 @@ marquee{
     letter-spacing: 2px;
     margin-bottom: 5px;
 }
-
-
-
-
 
 
 /**********************************/
