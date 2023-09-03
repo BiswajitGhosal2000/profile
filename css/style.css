@@ -57,6 +57,7 @@ a:focus {
     width: 100%;
     float: left;
     background: #161616;
+    height: 40rem;
 }
 .wrapper .sidebar::-webkit-scrollbar {
     display: none;
@@ -65,14 +66,20 @@ a:focus {
 .wrapper .content {
     position: relative;
     width: 100%;
-    padding: 15px;
+    padding: 20px;
     float: left;
     background: rgb(246, 209, 85,0);
 }
 
-.wrapper .sidebar-header,
-.wrapper .sidebar-footer {
+.wrapper .sidebar-header{
+    display:block;
+    height: 10rem;
+    background-color: #000000;
+}
+.wrapper .sidebar-footer{
     display:block; /* Changed */
+    height: 5rem;
+    background-color: #000000;
 }
 
 .navbar {
@@ -89,7 +96,14 @@ a:focus {
     border-top: none;
 }
 
+.navbar-expand-md .navbar-brand {
+    font-size: 2rem;
+    color: #ffffff;
+    padding: 5px ;
+}
+
 .navbar-expand-md .navbar-nav .nav-link {
+    font-size: large;
     color: #ffffff;
     padding: 5px 15px 7px 15px;
     transition: all .3s;
@@ -402,12 +416,16 @@ marquee{
     padding: 20px 20px;
     background: rgb(255, 255, 255,0.5);
     border-bottom: 30px solid rgb(255, 255, 255);
+    /* for Scroll Bar */
+    width:100%;
+    overflow-y: scroll;
+    height: 40rem;
 }
 
 
 .about img {
     width: 100%;
-    height: auto;
+    height: 25rem;
 }
 
 @media(max-width: 767.98px) {
@@ -450,6 +468,51 @@ marquee{
     transition: 1s;
 }
 
+/**********************************/
+/*********** Skill CSS ************/
+/**********************************/
+.skills {
+    color: #000000;
+    position: relative;
+    padding: 20px 20px;
+    background: rgb(255, 255, 255,0.5);
+    border-bottom: 30px solid rgb(255, 255, 255);
+    /* for Scroll Bar */
+    width:100%;
+    overflow-y: scroll;
+    height: 40rem;
+}
+
+
+.skills .skill-name {
+    margin-top: 15px;
+}
+
+.skills .skill-name p {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.skills .skill-name p:last-child {
+    float: right;
+}
+
+.skills .progress {
+    height: 5px;
+    border: 1px solid hsl(237, 85%, 64%);
+    border-radius: 0;
+    background: #ffffff;
+}
+
+.skills .progress .progress-bar {
+    width: 1px;
+    background: hsl(237, 85%, 56%);
+    border-radius: 0;
+    transition: 1s;
+}
+
 
 /**********************************/
 /********* Experiencr CSS **********/
@@ -463,7 +526,7 @@ marquee{
     /* for Scroll Bar */
     width:100%;
     overflow-y: scroll;
-    height: 35rem;
+    height: 40rem;
 }
 
 .experience .exp-col {
@@ -530,32 +593,6 @@ marquee{
 }
 
 
-/**********************************/
-/*********** Activity CSS **********/
-/**********************************/
-.activity {
-    color: #000000;
-    position: relative;
-    padding: 60px 30px 30px 30px;
-    background: rgb(255, 255, 255,0.5);
-    border-bottom: 30px solid rgb(255, 255, 255);
-}
-
-.activity .act-col {
-    position: relative;
-    width: 100%;
-    margin-bottom: 30px;
-}
-
-
-.activity .act-col h3 {
-    font-size: 20px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    margin-bottom: 5px;
-}
-
-
 
 /**********************************/
 /********* projects CSS *********/
@@ -569,7 +606,7 @@ marquee{
      /* for Scroll Bar */
      width:100%;
      overflow-y: scroll;
-     height: 35rem;
+     height: 40rem;
 }
 
 .projects .pro-col {
@@ -602,7 +639,7 @@ marquee{
     .projects {
         width:100%;
         overflow-y: scroll;
-        height: 35rem;
+        height: 40rem;
     }
 }
 
@@ -642,6 +679,7 @@ marquee{
     padding: 30px 30px;
     background: rgb(255, 255, 255,0.5);
     border-bottom: 30px solid rgb(255, 255, 255);
+    height: 40rem;
 }
 
 .education .edu-col {
@@ -720,7 +758,7 @@ marquee{
     /* for Scroll Bar */
     width:100%;
     overflow-y: scroll;
-    height: 35rem;
+    height: 40rem;
     
 }
 .certification .ach-col {
@@ -737,6 +775,34 @@ marquee{
     margin-bottom: 5px;
 }
 
+/**********************************/
+/*********** Activity CSS **********/
+/**********************************/
+.activity {
+    color: #000000;
+    position: relative;
+    padding: 60px 30px 30px 30px;
+    background: rgb(255, 255, 255,0.5);
+    border-bottom: 30px solid rgb(255, 255, 255);
+}
+
+.activity .act-col {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+
+.activity .act-col h3 {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+
+
+
 
 
 /**********************************/
@@ -747,6 +813,7 @@ marquee{
     position: relative;
     padding: 30px 30px 30px 30px;
     background: rgb(255, 255, 255,0.5);
+    height: 40rem;
 }
 
 .contact .contact-info {
