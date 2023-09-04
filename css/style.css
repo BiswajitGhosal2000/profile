@@ -3,7 +3,7 @@
 /**********************************/
 body {
     color: #666666;
-    background-color: #2e4ac768;
+    background: linear-gradient(180deg, rgba(231,231,48,0.8810580384497549) 16%,rgba(37,222,225,0.8418423521752451) 80%);
     /* background-image: url('bg2.png'); */
     /* background-repeat: no-repeat; */
     /* background-attachment: fixed; */
@@ -299,7 +299,8 @@ a:focus {
 /**********************************/
 .header {
     position: relative;
-    background: linear-gradient(112deg, rgba(138,133,219,0) 0%, rgba(222,216,128,1) 53%, rgba(109,170,182,1) 100%);
+    /* background-color: #7fea0e; */
+    /* background: linear-gradient(112deg, rgba(138,133,219,0) 0%, rgba(222,216,128,1) 53%, rgba(109,170,182,1) 100%); */
 }
 
 marquee{
@@ -308,7 +309,7 @@ marquee{
 }
 
 .header p {
-    color: rgb(92, 174, 245);
+    color: black;
     font-size: 22px;
     font-weight: 600;
     margin-bottom: 10px;
@@ -317,7 +318,8 @@ marquee{
 .header h1 {
     color: #222222;
     font-size: 50px;
-    font-weight: 700;
+    font-weight: bold;
+    text-transform: capitalize;
 }
 
 .header h2 {
@@ -358,7 +360,7 @@ marquee{
 }
 
 .large-btn .btn i {
-    margin-right: 8px;
+    margin: 8px;
 }
 
 .large-btn .btn::after {
@@ -425,33 +427,12 @@ marquee{
 
 .about img {
     width: 100%;
-    height: 25rem;
 }
 
 @media(max-width: 767.98px) {
     .about img {
         margin-bottom: 15px;
     }
-}
-
-
-.about .skills {
-    padding-top: 15px;
-}
-
-.about .skill-name {
-    margin-top: 15px;
-}
-
-.about .skill-name p {
-    display: inline-block;
-    margin-bottom: 5px;
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.about .skill-name p:last-child {
-    float: right;
 }
 
 .about .progress {
@@ -779,24 +760,29 @@ marquee{
 .activity {
     color: #000000;
     position: relative;
-    padding: 60px 30px 30px 30px;
+    padding: 30px 30px 30px 30px;
     background: rgb(255, 255, 255,0.5);
     border-bottom: 30px solid rgb(255, 255, 255);
+    /* for Scroll Bar */
+    width:100%;
+    overflow-y: scroll;
+    height: 40rem;
 }
 
-.activity .act-col {
-    position: relative;
+ .activity .container {
+    /* position: absolute; */
     width: 100%;
-    margin-bottom: 30px;
+    height: fit-content;
+    background: linear-gradient(112deg, rgba(229,52,9,0.8418423521752451) 0%, rgba(247,247,245,0.8782569180015756) 41%, rgba(13,164,80,0.7746154614189426) 100%);
 }
 
 
-.activity .act-col h3 {
+/*.activity .act-col h3 {
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 2px;
     margin-bottom: 5px;
-}
+} */
 
 
 /**********************************/
